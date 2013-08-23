@@ -50,6 +50,8 @@ public class AnswerGenerator extends AbstractAnswerGenerator {
 		Map<String, AnswerCandidate> results = new LinkedHashMap<String, AnswerCandidate>();
 		for (AnswerCandidate candidate : answerCandidates) {
 			String norm = StringUtils.normalize(candidate.toString());
+			
+			
 			AnswerCandidate result = results.get(norm);
 			if (result == null) {
 				results.put(norm, candidate);

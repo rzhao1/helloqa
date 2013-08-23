@@ -1,0 +1,7 @@
+class: edu.cmu.lti.oaqa.framework.collection.KnownSizeFileCollectionReader
+
+decorators: |
+  - inherit: helloqa.collection.answer-gs-decorator
+
+persistence-provider: |
+  inherit: helloqa.db.local-persistence-provider

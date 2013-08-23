@@ -137,11 +137,6 @@
 			<version>3.7.2</version>
 		</dependency>
 		<dependency>
-			<groupId>edu.cmu.lti.oaqa.bio.core</groupId>
-			<artifactId>baseqa</artifactId>
-			<version>1.9.1</version>
-		</dependency>
-		<dependency>
 			<groupId>edu.cmu.lti.oaqa.core.provider</groupId>
 			<artifactId>solr-provider</artifactId>
 			<version>1.0.7</version>

@@ -1,0 +1,4 @@
+class: edu.cmu.lti.oaqa.framework.eval.gs.TrecAnswerGoldStandardFilePersistenceProvider
+DataSet: TREC
+PathPattern: classpath:/gs/trec-answers.txt
+LineSyntax: (\d+)\ (.*)

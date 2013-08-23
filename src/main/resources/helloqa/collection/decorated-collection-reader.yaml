@@ -3,6 +3,7 @@ inherit: fs.fs-collection-reader
 decorators: |
   - inherit: helloqa.collection.keyterm-gs-decorator
   - inherit: helloqa.collection.passage-gs-decorator
+  - inherit: helloqa.collection.answer-gs-decorator
 
 persistence-provider: |
   inherit: helloqa.db.local-persistence-provider

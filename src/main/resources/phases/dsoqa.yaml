@@ -4,11 +4,23 @@ configuration:
   
 persistence-provider:
   inherit: helloqa.db.local-persistence-provider
+ 
+collection-reader: 
+   inherit: helloqa.collection.decorated-collection-reader
+   dataset: TREC
+#   file: /input/info-gain/trec-9-orig-test-t8.txt
+#   file: /input/info-gain/trec-9-variants-test-t8.txt
+#   file: /input/info-gain/trec-9-rand-test-t8.txt
+#   file: /input/trec-8-9-10-questions.txt
+   file: /input/TREC-8-Questions.txt
+#   file: /input/trec-9-questions.txt
+#   file: /input/trec-10-questions.txt
+#   file: /input/TREC-8-sample.txt
 
-collection-reader:
-  inherit: helloqa.collection.decorated-collection-reader
-  dataset: GUTENBERG
-  file: /input/small.txt
+#collection-reader:
+#  inherit: helloqa.collection.decorated-collection-reader
+#  dataset: GUTENBERG
+#  file: /input/small.txt
 #  inherit: fs.dir-collection-reader
 #  dataset: GUTENBERG
 #  suffix: txt
@@ -44,5 +56,7 @@ pipeline:
     name: answer-generator
     options: |
       - inherit: phases.AnswerGenerator
+  
+ # - inherit: phases.AnswerEvaluation 
 
     
